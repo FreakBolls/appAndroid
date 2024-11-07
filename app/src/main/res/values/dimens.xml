@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boton_menu_item_paddingBottom">20dp</dimen>
+    <dimen name="boton_menu_item_marginBottom">5dp</dimen>
+    <dimen name="correo_menu_item">20sp</dimen>
+</resources>

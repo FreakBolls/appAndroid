@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="CÓDIGO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvIdLibro"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="TÍTULO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="AUTOR"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAutorLibro"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="EDITORIAL"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEditorialLibro"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="GÉNERO"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvGeneroLibro"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLibro"
+                tools:srcCompat="@tools:sample/avatars"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+
+                android:contentDescription="Imagen del libro" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

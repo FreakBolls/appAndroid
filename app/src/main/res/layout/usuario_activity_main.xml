@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_login"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/actionbar_toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIENVENIDO"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:text="VISTA USUARIO"
+                android:textSize="@dimen/correo_menu_item" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.37"
+            tools:layout_editor_absoluteX="1dp">
+
+            <Button
+                android:id="@+id/bttnLibro"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4F5097"
+                android:text="@string/boton_menu_itemLibro"
+                android:layout_marginBottom="@dimen/boton_menu_item_marginBottom"/>
+
+            <Button
+                android:id="@+id/bttnAutor"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4F5097"
+                android:text="Autores"
+                android:layout_marginBottom="@dimen/boton_menu_item_marginBottom"/>
+
+            <Button
+                android:id="@+id/bttnPrestamo"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4F5097"
+                android:text="@string/boton_menu_registrarPrestamo" />
+
+            <Button
+                android:id="@+id/tbnCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal"
+                android:text="Cerrar Sesión"
+                android:layout_marginBottom="@dimen/boton_menu_item_marginBottom"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
